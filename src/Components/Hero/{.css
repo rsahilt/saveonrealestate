@@ -1,0 +1,16 @@
+.herointro{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 40%;
+}
+
+.centeredhero{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.herotext
+
