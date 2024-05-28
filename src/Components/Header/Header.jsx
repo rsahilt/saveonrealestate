@@ -1,5 +1,8 @@
 import './Header.css'
 import sorslogo from '../../assets/sorslogo.png'
+import { Link } from 'react-router-dom'
+
+
 
 const Header = () => {
   return (
@@ -17,13 +20,14 @@ const Header = () => {
                 </div>
             </div>
             <div className="navbar">
+            
                 <ul className='nav-ul'>
-                    <li className='listitems'><a href="#">Home</a></li>
-                    <li className='listitems'><a href="#">About</a></li>
-                    <li className='listitems'><a href="#">Our Team</a></li>
-                    <li className='listitems'><a href="#">Blogs</a></li>
-                    <li className='listitems'><a href="#">Contact</a></li>
-                    <li className='listitems'><a href="#">Listings</a></li>
+                    <li className='listitems'><Link to="/">Home</Link></li>
+                    <li className='listitems'><Link to="/">About</Link></li>
+                    <li className='listitems'><Link to="/">Our Team</Link></li>
+                    <li className='listitems'><Link to="/">Blogs</Link></li>
+                    <li className='listitems'><Link to="/">Contact</Link></li>
+                    <li className='listitems'><Link to="/">Listings</Link></li>
                 </ul>
             </div>
         </nav>
