@@ -1,13 +1,6 @@
 header{
     width: 100%;
-    height: 100px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
-}
-
-nav{
-    width: 100%;
-    padding: 15px 0;
-    height: 70px;
     background-color: rgba(12, 18, 32, 0.8);
     display: flex;
 }
@@ -41,12 +34,20 @@ nav{
 .title .top-title h1{
     font-size: 3em;
     justify-content: center;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding-top: 5px;
 }
 
 .title .btm-title{
     width: 100%;
     height: 35%;
-    font-size: 0.75em;
+}
+
+.btm-title-h2{
+    margin-top: 0;
+    font-size: 1.15em;
+    font-weight: 600;
 }
 
 .navbar{
@@ -54,51 +55,43 @@ nav{
     height: inherit;
 }
 
-.navbar .nav-ul{
-    display: flex;
-    list-style: none;
-    float: right;
-    margin-top: 2%;
-    padding-right:40px;
-}
-
-.navbar .nav-ul .listitems{
-    padding: 10px 17px;
-}
-
-.navbar .nav-ul .listitems a{
-    color: white;
-    text-decoration: none;
-    font-family: 'Lato';
-    font-weight: 400;
-    font-size: 0.9em;
+.nav-item{
     text-transform: uppercase;
-    letter-spacing: 1.4px;
+    font-size: 0.88em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    color: #fff;
 }
 
-.navbar .nav-ul .listitems a:hover{
-    color: #b2b2b2;
+.searchbuttonhome{
+    border: none;
+    padding-left: 2px;
+    color: black;
+    background-color: transparent;
 }
 
-
-/* Media Queries */
-
-@media screen and (min-width: 985px){
-    .navbar .nav-ul .listitems{
-        padding: 10px 10px;
-    }
+.searchbuttonhome:hover,
+.searchbuttonhome:active,
+.searchbuttonhome:focus
+{
+    background-color: transparent !important;
+    color: black !important;
 }
 
-@media screen and (max-width: 985px){
-    .navbar{
-        display: none;
-    }
+.searchbox{
+    border: none;
+    border-bottom: 1px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+    background-color: transparent !important;
+    color: #fff !important;
+}
 
-    .logo{
-        width: 12%;
-    }
-
-    .title{
-        width: 60%;
-    }
+.searchbox:focus {
+    border: none;
+    border-bottom: 1px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
 }
