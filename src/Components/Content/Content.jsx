@@ -9,13 +9,22 @@ import {faBath} from '@fortawesome/free-solid-svg-icons'
 import {faKitchenSet} from '@fortawesome/free-solid-svg-icons'
 import realtor1 from '../../assets/realtor1.png'
 import Footer from '../Footer/Footer.jsx'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'
 
 
 const Content = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+      }, [])
+
   return (
     <>
         <section>
-            <div className='content-container'>
+            <div className='content-container' data-aos="slide-up">
                 <div className="content-image">
                     <img src={contentimg} alt="content image" className='contentimage'/>
                 </div>
@@ -35,7 +44,7 @@ const Content = () => {
 
         <div className="listings">
 
-            <div className="listings-container">
+            <div className="listings-container" data-aos="slide-up">
 
                 <div className='listingsheading'>
                     <h1> &nbsp; TOP LISTINGS</h1>
@@ -98,7 +107,7 @@ const Content = () => {
 
         </div>
 
-        <div className="ourteam">
+        <div className="ourteam" data-aos="slide-up">
             <div className="teamheading">
                 <h1>Our Team</h1>
             </div>

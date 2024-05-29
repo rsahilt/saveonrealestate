@@ -64,10 +64,19 @@ header{
     color: #fff;
 }
 
+.nav-item:hover{
+    color: bisque;
+}
+
+.nav-item.active{
+    color: bisque !important;
+    font-weight: 900 !important;
+}
+
 .searchbuttonhome{
     border: none;
     padding-left: 2px;
-    color: black;
+    color: white;
     background-color: transparent;
 }
 
@@ -76,7 +85,7 @@ header{
 .searchbuttonhome:focus
 {
     background-color: transparent !important;
-    color: black !important;
+    color: white !important;
 }
 
 .searchbox{

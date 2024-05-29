@@ -1,7 +1,7 @@
 import './Header.css';
 import sorslogo from '../../assets/sorslogo.png';
 import { Navbar, Container, Nav, Form, Row, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation  } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
@@ -30,11 +30,11 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/" className="nav-item">Home</Nav.Link>
-                            <Nav.Link as={Link} to="/about" className="nav-item">About</Nav.Link>
-                            <Nav.Link as={Link} to="/contact" className="nav-item">Contact</Nav.Link>
-                            <Nav.Link as={Link} to="/team" className="nav-item">Our Team</Nav.Link>
-                            <Nav.Link as={Link} to="/listings" className="nav-item">Listing</Nav.Link>
+                            <Nav.Link as={Link} to="/" className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}>Home</Nav.Link>
+                            <Nav.Link as={Link} to="/about" className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>About</Nav.Link>
+                            <Nav.Link as={Link} to="/contact" className={`nav-item ${location.pathname === '/contact' ? 'active' : ''}`}>Contact</Nav.Link>
+                            <Nav.Link as={Link} to="/team" className={`nav-item ${location.pathname === '/team' ? 'active' : ''}`}>Our Team</Nav.Link>
+                            <Nav.Link as={Link} to="/listings" className={`nav-item ${location.pathname === '/listings' ? 'active' : ''}`}>Listing</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
