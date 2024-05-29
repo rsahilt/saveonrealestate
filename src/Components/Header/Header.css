@@ -95,3 +95,10 @@ header{
     outline: none;
     box-shadow: none;
 }
+
+@media screen and (max-width:'768px'){
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

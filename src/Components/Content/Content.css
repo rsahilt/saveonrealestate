@@ -20,8 +20,7 @@ section{
 
 .content-text{
     width: 50%;
-    height: 100%;
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 .content-text h1{
@@ -34,7 +33,7 @@ section{
 .content-text p{
     font-size: 1.2em;
     font-family: 'Lato', sans-serif;
-    padding-top: 30px;
+    padding-top: 20px;
     color: #0c2a34;
     
 }
