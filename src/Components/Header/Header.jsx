@@ -43,28 +43,26 @@ const Header = () => {
                         <Nav.Link as={Link} to="/about-us" className="nav-item">Our Team</Nav.Link>
                         <Nav.Link as={Link} to="/contact-us" className="nav-item">Listing</Nav.Link>
                     </Nav>
-
-                    <Form inline>
-                        <Row>
-                            <Col xs="auto">
-                                <Form.Control
-                                type="text"
-                                placeholder="Search"
-                                className=" mr-sm-2 searchbox"
-                                />
-                            </Col>
-                            <Col xs="auto">
-                                <Button className='searchbuttonhome' type="submit">
-                                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                                </Button>
-                            </Col>
-                        </Row>
-                </Form>
-
                 </Navbar.Collapse>
+                <Form inline>
+                    <Row>
+                        <Col xs="auto">
+                            <Form.Control
+                            type="text"
+                            placeholder="Search"
+                            className=" mr-sm-2 searchbox"
+                            />
+                        </Col>
+                        <Col xs="auto">
+                            <Button className='searchbuttonhome' type="submit">
+                                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                            </Button>
+                        </Col>
+                    </Row>
+                </Form>
             </Container>
+            
         </Navbar>
-
 
     </header>
   )
