@@ -124,10 +124,16 @@ section{
     padding-top: 5px;
 }
 
+.housedetail p{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .housedetail p:first-child{
     color: #595959;
-    font-size: 1.3em;
-    
+    font-size: 1.3em;    
 }
 
 .housedetail p:nth-child(2){
@@ -273,6 +279,7 @@ footer{
 
 .quicklinkscolumn ul{
     list-style: none;
+    padding-left: 0;
 }
 
 .quicklinkscolumn ul li{
