@@ -12,6 +12,7 @@ import Footer from '../Footer/Footer.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Content = () => {
@@ -100,7 +101,9 @@ const Content = () => {
                 </div>
 
                 <div className="seeallbtn">
+                    <Link to="/listings">
                     <button className="seealllistingbtn">See all listings</button>
+                    </Link>
                 </div>
 
             </div>

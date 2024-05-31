@@ -1,13 +1,20 @@
 import './TeamPage.css'
 import Header from '../Components/Header/Header'
 import Footer from "../Components/Footer/Footer"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Card, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from 'react'
 
 import realtor1 from '../assets/realtor1.png'
 
 const TeamPage = () => {
+  useEffect(() => {
+    AOS.init({
+        duration: 1000,
+    });
+  }, [])
   return (
     <>
         <Header />
@@ -17,7 +24,7 @@ const TeamPage = () => {
             <h1 className='realtor-heading'>Our Team</h1>
           </div>
           <div className="card-container">
-            <Card style={{ width: '500px', borderRadius:'0' }} className='realtor-card'>
+            <Card style={{ width: '500px', borderRadius:'0' }} className='realtor-card' data-aos="fade-in">
               <Row noGutters>
                 <Col md={4}>
                   <Card.Img src={realtor1} alt="Fateh Rehsi" style={{height:'100%', borderRadius:'0'}}/>
@@ -35,7 +42,7 @@ const TeamPage = () => {
               </Row>
             </Card>
 
-            <Card style={{ width: '500px', borderRadius:'0' }} className='realtor-card'>
+            <Card style={{ width: '500px', borderRadius:'0' }} className='realtor-card' data-aos="fade-in">
               <Row noGutters>
                 <Col md={4}>
                   <Card.Img src={realtor1} alt="Fateh Rehsi" style={{height:'100%', borderRadius:'0'}}/>
@@ -53,7 +60,7 @@ const TeamPage = () => {
               </Row>
             </Card>
 
-            <Card style={{ width: '500px', borderRadius:'0' }} className='realtor-card'>
+            <Card style={{ width: '500px', borderRadius:'0' }} className='realtor-card' data-aos="fade-in">
               <Row noGutters>
                 <Col md={4}>
                   <Card.Img src={realtor1} alt="Fateh Rehsi" style={{height:'100%', borderRadius:'0'}}/>
