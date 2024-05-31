@@ -7,6 +7,7 @@ const AboutPage = () => {
     <>
         <Header />
 
+
         <Footer />
 
     </>
