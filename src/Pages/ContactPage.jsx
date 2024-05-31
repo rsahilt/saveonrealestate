@@ -20,8 +20,8 @@ const ContactPage = () => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email Address</Form.Label>
-              <Form.Control type="email" placeholder="Email Address" />
+              <Form.Label>Contact Number</Form.Label>
+              <Form.Control type="text" placeholder="Contact Number" />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
