@@ -1,9 +1,9 @@
 .about-section{
-    margin: 10px auto 40px auto;
-    width: 80%;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    padding: 40px;
 }
 
 .about-heading{
@@ -11,4 +11,9 @@
     font-weight: 800;
     font-size: 2em;
     padding-bottom: 20px;
+}
+
+.about-text{
+    margin: 0 auto;
+    width: 80%;
 }
