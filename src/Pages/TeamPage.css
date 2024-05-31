@@ -1,0 +1,25 @@
+.team-section{
+    width: 100%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.realtor-heading{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.card-container{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.realtor-card{
+    margin: 10px;
+}
