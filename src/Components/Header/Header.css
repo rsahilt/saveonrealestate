@@ -105,6 +105,12 @@ header{
     box-shadow: none;
 }
 
+input::placeholder {
+    color: white !important;
+    opacity: 0.5 !important;
+   
+  }
+
 @media screen and (max-width:'768px'){
     .container{
         display: flex;

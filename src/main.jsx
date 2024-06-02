@@ -6,6 +6,7 @@ import AboutPage from './Pages/AboutPage.jsx'
 import ContactPage from './Pages/ContactPage.jsx'
 import TeamPage from './Pages/TeamPage.jsx'
 import ListingPage from './Pages/ListingPage.jsx'
+import ListingDetails from './Pages/ListingDetails.jsx'
 
 import {
   createBrowserRouter,
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/listings",
     element: <ListingPage />,
+  },
+  {
+    path: "/details/:id",
+    element: <ListingDetails />,
   },
 ]);
 

@@ -9,12 +9,12 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.json("Hey, this is the backend of saveon");
+  res.json("Hey, this is the backend of saveon");
 });
 
 app.use('/realtors', realtorRoutes);
 app.use('/listings', listingRoutes);
 
 app.listen(8080, () => {
-    console.log("Connected to backend");
+  console.log("Connected to backend");
 });
