@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import realtorRoutes from './routes/realtorRoutes.js';
+import listingRoutes from './routes/listingRoutes.js';
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.use('/realtors', realtorRoutes);
+app.use('/listings', listingRoutes);
 
 app.listen(8080, () => {
     console.log("Connected to backend");
