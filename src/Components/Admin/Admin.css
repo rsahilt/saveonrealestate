@@ -1,0 +1,28 @@
+.admin-sidebar{
+    width: 100%;
+    height: 100%;
+    background-color: #99bbc2;
+}
+
+.admin-sidebar-list{
+    padding-top: 20px;
+}
+
+.admin-link{
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 0 !important;
+}
+
+.admin-search-btn,
+.admin-search-btn:hover,
+.admin-search-btn:active,
+.admin-search-btn:focus
+{
+    color: #fff !important;
+    background-color: transparent !important;
+    outline: transparent !important;
+    border: none !important;
+}
+
+

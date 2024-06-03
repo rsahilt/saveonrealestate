@@ -7,6 +7,7 @@ import ContactPage from './Pages/ContactPage.jsx'
 import TeamPage from './Pages/TeamPage.jsx'
 import ListingPage from './Pages/ListingPage.jsx'
 import ListingDetails from './Pages/ListingDetails.jsx'
+import Dashboard from './Pages/Admin/Dashboard.jsx'
 
 import {
   createBrowserRouter,
@@ -39,6 +40,12 @@ const router = createBrowserRouter([
     path: "/details/:id",
     element: <ListingDetails />,
   },
+
+  {
+    path: "/admin",
+    element: <Dashboard />,
+  },
+ 
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
