@@ -16,5 +16,14 @@
     width: 80%;
     background-color: #F5F5F5;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-summary{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
